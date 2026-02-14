@@ -40,15 +40,15 @@ def add_message(msg, sender="system"):
     frame = tk.Frame(scroll_frame, bg="#f5f5f5")
 
     if sender == "client":
-        bg_color = "#dcf8c6"  # WhatsApp light green
+        bg_color = "#dcf8c6"  
         anchor = "e"
         padx = (50, 10)
     elif sender == "server":
-        bg_color = "#ebebeb"  # light gray
+        bg_color = "#ebebeb" 
         anchor = "w"
         padx = (10, 50)
     else:
-        bg_color = "#cce5ff"  # system messages light blue
+        bg_color = "#cce5ff" 
         anchor = "center"
         padx = (100, 100)
 
@@ -117,3 +117,4 @@ send_button = tk.Button(input_frame, text="Send", command=send_message, bg="#c21
 send_button.pack(side=tk.RIGHT)
 
 root.mainloop()
+
